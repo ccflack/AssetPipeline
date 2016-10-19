@@ -1,0 +1,16 @@
+<div class="jumbotron text-center">
+  <h1> <%= @message %> </h1>
+  <h3> <%= @subtitle %> </h3>
+</div>
+
+<section class="container-fluid">
+  <div class="row">
+    <% @images.each do |door| %>
+      <div class = "col-xs-12 col-md-6 col-lg-3">
+        <%= link_to image_tag(door, class: "img-responsive"), end_path(id: door) %>
+      </div>
+    <% end %>
+  </div>
+</section>
+
+<%= link_to "Home", root_path %>

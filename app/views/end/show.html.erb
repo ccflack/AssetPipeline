@@ -1,0 +1,8 @@
+<div class="jumbotron text-center">
+  <h1> <%= @message %> </h1>
+  <h3> <%= @subtitle %> </h3>
+</div>
+
+<%= image_tag(params[:id], class: "img-responsive center-block") %>
+
+<%= link_to "Try again?", new_path %>
