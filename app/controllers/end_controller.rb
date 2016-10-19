@@ -8,8 +8,8 @@ class EndController < ApplicationController
         @door = "blue door"
       when "red_door"
         @door = "red door"
-      when "emergency_exit. Goodbye"
-        @door = "emergency exit"
+      when "emergency_exit"
+        @door = "emergency exit. Goodbye"
     end
     @message = "You went through the #{@door}."
     @subtitle = "Wasn't that fun?"

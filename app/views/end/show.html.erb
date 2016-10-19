@@ -3,6 +3,10 @@
   <h3> <%= @subtitle %> </h3>
 </div>
 
-<%= image_tag(params[:id], class: "img-responsive center-block") %>
+<div class="text-center">
+  <%= link_to "Try again?", new_path %>
+</div>
 
-<%= link_to "Try again?", new_path %>
+<hr />
+
+<%= image_tag(params[:id], class: "img-responsive center-block") %>
